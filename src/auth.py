@@ -56,12 +56,13 @@ def render_login_form() -> None:
             password = st.text_input("Password", type="password", placeholder="Enter password")
             submitted = st.form_submit_button("Sign In", use_container_width=True, type="primary")
 
-            if submitted:
-                if check_login(username, password):
-                    st.session_state["authenticated"] = True
-                    st.rerun()
-                else:
-                    st.error("Invalid username or password.")
+        # Handle login result outside the form context
+        if submitted:
+            if check_login(username, password):
+                st.session_state["authenticated"] = True
+                st.rerun()
+            else:
+                st.error("Invalid username or password.")
 
 
 def render_profile_sidebar() -> None:
