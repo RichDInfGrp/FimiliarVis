@@ -1,5 +1,7 @@
 """Fimiliar Vis — Authentication and user profile management."""
 
+import os
+
 import streamlit as st
 
 from src.config import DEFAULT_USER_PROFILE
@@ -14,13 +16,20 @@ def init_session_state() -> None:
 
 
 def check_login(username: str, password: str) -> bool:
-    """Validate credentials against Streamlit secrets."""
+    """Validate credentials against Streamlit secrets or environment variables."""
+    # Try Streamlit secrets first (local dev)
     try:
         valid_user = st.secrets["credentials"]["username"]
         valid_pass = st.secrets["credentials"]["password"]
         return username == valid_user and password == valid_pass
     except (KeyError, FileNotFoundError):
-        return False
+        pass
+    # Fallback to environment variables (Azure App Service)
+    valid_user = os.environ.get("CREDENTIALS_USERNAME", "")
+    valid_pass = os.environ.get("CREDENTIALS_PASSWORD", "")
+    if valid_user and valid_pass:
+        return username == valid_user and password == valid_pass
+    return False
 
 
 def render_login_form() -> None:
