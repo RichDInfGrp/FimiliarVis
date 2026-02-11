@@ -29,7 +29,8 @@
   <!-- Sidebar -->
   <nav class="sidebar">
     <div class="profile">
-      <img id="profile-photo" src="" alt="Profile photo" onerror="this.style.display='none'">
+      <img id="profile-photo" src="" alt="Profile photo">
+      <div class="sidebar-initials" id="sidebar-initials" style="display:none;">NB</div>
       <div class="profile-name" id="profile-name"></div>
       <div class="profile-title" id="profile-title"></div>
       <a class="profile-link" id="profile-linkedin" href="#" target="_blank">View LinkedIn</a>
@@ -62,9 +63,25 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="main" id="main-content">
-    <div class="loading">Loading...</div>
-  </main>
+  <div style="flex:1; display:flex; flex-direction:column; overflow:hidden;">
+    <!-- Top bar with profile -->
+    <header class="topbar">
+      <div class="topbar-brand">◆ Fimiliar Vis</div>
+      <div class="topbar-profile">
+        <div class="topbar-info">
+          <div class="topbar-name" id="topbar-name"></div>
+          <div class="topbar-title" id="topbar-title"></div>
+        </div>
+        <div class="topbar-avatar" id="topbar-avatar">
+          <img id="topbar-photo" src="" alt="Profile photo">
+          <div class="topbar-initials" id="topbar-initials">NB</div>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main-content">
+      <div class="loading">Loading...</div>
+    </main>
+  </div>
 </div>
 
 <script type="module">
@@ -97,11 +114,35 @@
   // Init auth
   initAuth();
 
-  // Set profile
+  // Set profile — sidebar
   document.getElementById('profile-photo').src = USER_PROFILE.photoUrl;
   document.getElementById('profile-name').textContent = USER_PROFILE.name;
   document.getElementById('profile-title').textContent = USER_PROFILE.title;
   document.getElementById('profile-linkedin').href = USER_PROFILE.linkedinUrl;
+
+  // Set profile — top bar
+  document.getElementById('topbar-name').textContent = USER_PROFILE.name;
+  document.getElementById('topbar-title').textContent = USER_PROFILE.title;
+
+  // Handle photo loading with fallback to initials
+  const topbarPhoto = document.getElementById('topbar-photo');
+  const topbarInitials = document.getElementById('topbar-initials');
+  const sidebarPhoto = document.getElementById('profile-photo');
+
+  function showPhoto(img) {
+    img.style.display = 'block';
+  }
+  function hidePhoto(img, fallback) {
+    img.style.display = 'none';
+    if (fallback) fallback.style.display = 'flex';
+  }
+
+  topbarPhoto.onload = () => { showPhoto(topbarPhoto); topbarInitials.style.display = 'none'; };
+  topbarPhoto.onerror = () => { hidePhoto(topbarPhoto, topbarInitials); };
+  topbarPhoto.src = USER_PROFILE.photoUrl;
+
+  sidebarPhoto.onload = () => { showPhoto(sidebarPhoto); };
+  sidebarPhoto.onerror = () => { sidebarPhoto.style.display = 'none'; document.getElementById('sidebar-initials').style.display = 'flex'; };
 
   // Sign out
   document.getElementById('btn-signout').addEventListener('click', logout);
