@@ -1,0 +1,42 @@
+[
+  {
+    "week": "2025-04-21 00:00:00",
+    "icp_engagements": 1,
+    "unique_icp_engagers": 1
+  },
+  {
+    "week": "2025-05-26 00:00:00",
+    "icp_engagements": 1,
+    "unique_icp_engagers": 1
+  },
+  {
+    "week": "2025-10-13 00:00:00",
+    "icp_engagements": 1,
+    "unique_icp_engagers": 1
+  },
+  {
+    "week": "2025-12-29 00:00:00",
+    "icp_engagements": 1,
+    "unique_icp_engagers": 1
+  },
+  {
+    "week": "2026-01-19 00:00:00",
+    "icp_engagements": 4,
+    "unique_icp_engagers": 4
+  },
+  {
+    "week": "2026-01-26 00:00:00",
+    "icp_engagements": 11,
+    "unique_icp_engagers": 10
+  },
+  {
+    "week": "2026-02-02 00:00:00",
+    "icp_engagements": 7,
+    "unique_icp_engagers": 7
+  },
+  {
+    "week": "2026-02-09 00:00:00",
+    "icp_engagements": 1,
+    "unique_icp_engagers": 1
+  }
+]

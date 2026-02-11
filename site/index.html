@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fimiliar Vis — Nicole Bello</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+</head>
+<body>
+
+<!-- Login Overlay -->
+<div id="login-overlay">
+  <div class="login-card">
+    <h1>◆ Fimiliar Vis</h1>
+    <p class="subtitle">LinkedIn Performance Dashboard</p>
+    <form id="login-form">
+      <h2>Sign In</h2>
+      <input type="text" id="login-username" placeholder="Username" autocomplete="username" required>
+      <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+      <button type="submit">Sign In</button>
+      <p id="login-error" class="login-error"></p>
+    </form>
+  </div>
+</div>
+
+<!-- App Shell -->
+<div id="app">
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="profile">
+      <img id="profile-photo" src="" alt="Profile photo" onerror="this.style.display='none'">
+      <div class="profile-name" id="profile-name"></div>
+      <div class="profile-title" id="profile-title"></div>
+      <a class="profile-link" id="profile-linkedin" href="#" target="_blank">View LinkedIn</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Dashboard</div>
+      <a class="nav-link" data-page="home"><span class="nav-icon">◆</span> Home</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Performance</div>
+      <a class="nav-link" data-page="content-performance"><span class="nav-icon">📊</span> Content Performance</a>
+      <a class="nav-link" data-page="audience-growth"><span class="nav-icon">📈</span> Audience Growth</a>
+      <a class="nav-link" data-page="audience-quality"><span class="nav-icon">🎯</span> Audience Quality</a>
+      <a class="nav-link" data-page="engagement-targets"><span class="nav-icon">🔥</span> Engagement Targets</a>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">ICP Analysis</div>
+      <a class="nav-link" data-page="network-growth"><span class="nav-icon">🌐</span> Network Growth</a>
+      <a class="nav-link" data-page="acquisition-velocity"><span class="nav-icon">⚡</span> Acquisition Velocity</a>
+      <a class="nav-link" data-page="icp-composition"><span class="nav-icon">🏢</span> ICP Composition</a>
+      <a class="nav-link" data-page="icp-engagement"><span class="nav-icon">🔬</span> ICP Engagement</a>
+    </div>
+
+    <div class="sidebar-footer">
+      <button class="btn-signout" id="btn-signout">Sign Out</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main" id="main-content">
+    <div class="loading">Loading...</div>
+  </main>
+</div>
+
+<script type="module">
+  import { initAuth, logout } from './js/auth.js';
+  import { registerPage, initRouter } from './js/router.js';
+  import { USER_PROFILE } from './js/config.js';
+
+  // Pages
+  import { render as home } from './js/pages/home.js';
+  import { render as contentPerformance } from './js/pages/content-performance.js';
+  import { render as audienceGrowth } from './js/pages/audience-growth.js';
+  import { render as audienceQuality } from './js/pages/audience-quality.js';
+  import { render as engagementTargets } from './js/pages/engagement-targets.js';
+  import { render as networkGrowth } from './js/pages/network-growth.js';
+  import { render as acquisitionVelocity } from './js/pages/acquisition-velocity.js';
+  import { render as icpComposition } from './js/pages/icp-composition.js';
+  import { render as icpEngagement } from './js/pages/icp-engagement.js';
+
+  // Register pages
+  registerPage('home', home);
+  registerPage('content-performance', contentPerformance);
+  registerPage('audience-growth', audienceGrowth);
+  registerPage('audience-quality', audienceQuality);
+  registerPage('engagement-targets', engagementTargets);
+  registerPage('network-growth', networkGrowth);
+  registerPage('acquisition-velocity', acquisitionVelocity);
+  registerPage('icp-composition', icpComposition);
+  registerPage('icp-engagement', icpEngagement);
+
+  // Init auth
+  initAuth();
+
+  // Set profile
+  document.getElementById('profile-photo').src = USER_PROFILE.photoUrl;
+  document.getElementById('profile-name').textContent = USER_PROFILE.name;
+  document.getElementById('profile-title').textContent = USER_PROFILE.title;
+  document.getElementById('profile-linkedin').href = USER_PROFILE.linkedinUrl;
+
+  // Sign out
+  document.getElementById('btn-signout').addEventListener('click', logout);
+
+  // Init router
+  initRouter();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+[
+  {
+    "week": "2025-04-21 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 135
+  },
+  {
+    "week": "2025-04-21 00:00:00",
+    "category": "ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-04-28 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 14
+  },
+  {
+    "week": "2025-05-05 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 5
+  },
+  {
+    "week": "2025-05-12 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 6
+  },
+  {
+    "week": "2025-05-26 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 27
+  },
+  {
+    "week": "2025-05-26 00:00:00",
+    "category": "ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-06-02 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 6
+  },
+  {
+    "week": "2025-06-09 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-06-16 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 2
+  },
+  {
+    "week": "2025-06-23 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-07-07 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 62
+  },
+  {
+    "week": "2025-07-14 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 12
+  },
+  {
+    "week": "2025-07-21 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 20
+  },
+  {
+    "week": "2025-07-28 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 6
+  },
+  {
+    "week": "2025-08-04 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-08-11 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-08-25 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 34
+  },
+  {
+    "week": "2025-09-01 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 17
+  },
+  {
+    "week": "2025-09-08 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 2
+  },
+  {
+    "week": "2025-09-15 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 41
+  },
+  {
+    "week": "2025-09-22 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 4
+  },
+  {
+    "week": "2025-09-29 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 355
+  },
+  {
+    "week": "2025-10-06 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 193
+  },
+  {
+    "week": "2025-10-13 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 69
+  },
+  {
+    "week": "2025-10-13 00:00:00",
+    "category": "ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2025-10-20 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 4
+  },
+  {
+    "week": "2025-10-27 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 2
+  },
+  {
+    "week": "2025-11-03 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 17
+  },
+  {
+    "week": "2025-11-10 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 141
+  },
+  {
+    "week": "2025-11-17 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 62
+  },
+  {
+    "week": "2025-11-24 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 11
+  },
+  {
+    "week": "2025-12-01 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 15
+  },
+  {
+    "week": "2025-12-08 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 167
+  },
+  {
+    "week": "2025-12-15 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 223
+  },
+  {
+    "week": "2025-12-22 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 38
+  },
+  {
+    "week": "2025-12-29 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 37
+  },
+  {
+    "week": "2025-12-29 00:00:00",
+    "category": "ICP",
+    "engagements": 1
+  },
+  {
+    "week": "2026-01-05 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 28
+  },
+  {
+    "week": "2026-01-12 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 213
+  },
+  {
+    "week": "2026-01-19 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 160
+  },
+  {
+    "week": "2026-01-19 00:00:00",
+    "category": "ICP",
+    "engagements": 4
+  },
+  {
+    "week": "2026-01-26 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 342
+  },
+  {
+    "week": "2026-01-26 00:00:00",
+    "category": "ICP",
+    "engagements": 11
+  },
+  {
+    "week": "2026-02-02 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 257
+  },
+  {
+    "week": "2026-02-02 00:00:00",
+    "category": "ICP",
+    "engagements": 7
+  },
+  {
+    "week": "2026-02-09 00:00:00",
+    "category": "Non-ICP",
+    "engagements": 34
+  },
+  {
+    "week": "2026-02-09 00:00:00",
+    "category": "ICP",
+    "engagements": 1
+  }
+]

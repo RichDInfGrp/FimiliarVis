@@ -1,4 +1,7 @@
-# Secrets — contains login credentials
+# Source data (Excel files — not deployed)
+data/raw/
+
+# Streamlit secrets
 .streamlit/secrets.toml
 
 # Python
@@ -6,7 +9,6 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 dist/
-build/
 .venv/
 venv/
 

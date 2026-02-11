@@ -1,0 +1,152 @@
+[
+  {
+    "Top Demographics": "Job titles",
+    "Value": "Account Executive",
+    "Percentage": 0.03761877119541168
+  },
+  {
+    "Top Demographics": "Job titles",
+    "Value": "Founder",
+    "Percentage": 0.02559627778828144
+  },
+  {
+    "Top Demographics": "Job titles",
+    "Value": "Sales Director",
+    "Percentage": 0.023463252931833267
+  },
+  {
+    "Top Demographics": "Job titles",
+    "Value": "Vice President of Sales",
+    "Percentage": 0.020748497918248177
+  },
+  {
+    "Top Demographics": "Job titles",
+    "Value": "Enterprise Account Executive",
+    "Percentage": 0.02016676403582096
+  },
+  {
+    "Top Demographics": "Locations",
+    "Value": "London Area, United Kingdom",
+    "Percentage": 0.13631956279277802
+  },
+  {
+    "Top Demographics": "Locations",
+    "Value": "New York City Metropolitan Area",
+    "Percentage": 0.07562536001205444
+  },
+  {
+    "Top Demographics": "Locations",
+    "Value": "Greater Philadelphia",
+    "Percentage": 0.041303083300590515
+  },
+  {
+    "Top Demographics": "Locations",
+    "Value": "Greater Paris Metropolitan Region",
+    "Percentage": 0.022493697702884674
+  },
+  {
+    "Top Demographics": "Locations",
+    "Value": "Greater Boston",
+    "Percentage": 0.02152414247393608
+  },
+  {
+    "Top Demographics": "Industries",
+    "Value": "Software Development",
+    "Percentage": 0.1849912703037262
+  },
+  {
+    "Top Demographics": "Industries",
+    "Value": "IT Services and IT Consulting",
+    "Percentage": 0.18324607610702515
+  },
+  {
+    "Top Demographics": "Industries",
+    "Value": "Human Resources Services",
+    "Percentage": 0.11421369016170502
+  },
+  {
+    "Top Demographics": "Industries",
+    "Value": "Business Consulting and Services",
+    "Percentage": 0.05565251037478447
+  },
+  {
+    "Top Demographics": "Industries",
+    "Value": "Financial Services",
+    "Percentage": 0.05371339991688728
+  },
+  {
+    "Top Demographics": "Seniority",
+    "Value": "Senior",
+    "Percentage": 0.36164435744285583
+  },
+  {
+    "Top Demographics": "Seniority",
+    "Value": "Director",
+    "Percentage": 0.1749078929424286
+  },
+  {
+    "Top Demographics": "Seniority",
+    "Value": "Entry",
+    "Percentage": 0.09734341502189636
+  },
+  {
+    "Top Demographics": "Seniority",
+    "Value": "VP",
+    "Percentage": 0.09714950621128082
+  },
+  {
+    "Top Demographics": "Seniority",
+    "Value": "Manager",
+    "Percentage": 0.07232887297868729
+  },
+  {
+    "Top Demographics": "Company size",
+    "Value": "10,001+ employees",
+    "Percentage": 0.26022881269454956
+  },
+  {
+    "Top Demographics": "Company size",
+    "Value": "5001-10,000 employees",
+    "Percentage": 0.12390924990177155
+  },
+  {
+    "Top Demographics": "Company size",
+    "Value": "1001-5000 employees",
+    "Percentage": 0.10568159818649292
+  },
+  {
+    "Top Demographics": "Company size",
+    "Value": "11-50 employees",
+    "Percentage": 0.09811906516551971
+  },
+  {
+    "Top Demographics": "Company size",
+    "Value": "51-200 employees",
+    "Percentage": 0.08842350542545319
+  },
+  {
+    "Top Demographics": "Companies",
+    "Value": "ADP",
+    "Percentage": 0.083963543176651
+  },
+  {
+    "Top Demographics": "Companies",
+    "Value": "Dayforce",
+    "Percentage": 0.0754314512014389
+  },
+  {
+    "Top Demographics": "Companies",
+    "Value": "UKG",
+    "Percentage": 0.04886562004685402
+  },
+  {
+    "Top Demographics": "Companies",
+    "Value": "Oracle",
+    "Percentage": "< 1%"
+  },
+  {
+    "Top Demographics": "Companies",
+    "Value": "Workday",
+    "Percentage": "< 1%"
+  }
+]
